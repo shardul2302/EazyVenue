@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Admin - Venue Management</h2>
+
+  <form id="addVenueForm">
+    <input type="text" id="venueName" placeholder="Venue Name" required />
+    <input type="text" id="location" placeholder="Location" required />
+    <input type="number" id="capacity" placeholder="Capacity" required />
+    <button type="submit">Add Venue</button>
+  </form>
+
+  <form id="blockDateForm">
+    <input type="text" id="venueId" placeholder="Venue ID" required />
+    <input type="date" id="blockDate" required />
+    <button type="submit">Block Date</button>
+  </form>
+
+  <button onclick="logout()">Logout</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
